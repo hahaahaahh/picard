@@ -96,7 +96,7 @@ build-eval-image:
 		--cache-from type=registry,ref=tscholak/$(EVAL_IMAGE_NAME):cache \
 		--cache-to type=inline \
 		--push \
-		git@github.com:ElementAI/picard#$(GIT_HEAD_REF)
+		https://github.com/hahaahaahh/picard.git#$(GIT_HEAD_REF)
 
 .PHONY: pull-eval-image
 pull-eval-image:
