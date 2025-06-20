@@ -75,7 +75,7 @@ RUN pip install cython \
     && cd /app/third_party/folly \
     && mkdir _build \
     && cd _build \
-    && cmake -DBUILD_SHARED_LIBS=ON -DPYTHON_EXTENSIONS=ON -DBUILD_EXAMPLES=off -DBUILD_TESTS=off ../. \
+    && cmake -DBUILD_SHARED_LIBS=ON -DPYTHON_EXTENSIONS=off -DBUILD_EXAMPLES=off -DBUILD_TESTS=off ../. \
     && make -j4 \
     && make install \
     && cp folly/cybld/dist/folly-0.0.1-cp37-cp37m-linux_x86_64.whl /app/ \
